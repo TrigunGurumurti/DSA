@@ -4,14 +4,21 @@ int main()
 {
     int n;
     cin>>n;
-    int arr[n];
+    int nums[n];
     for(int i=0;i<=n-1;i++)
     {
-        cin>>arr[i];
+        cin>>nums[i];
     }
-    for(int i=n-1;i>=0;i--)
+    int left=0,right=n-1;
+    while(left<right)
     {
-        cout<<arr[i]<<" ";
+        swap(nums[left],nums[right]);
+        left++;
+        right--;
+    }
+    for(int i=0;i<=n-1;i++)
+    {
+        cout<<nums[i]<<" ";
     }
     return 0;
 }
