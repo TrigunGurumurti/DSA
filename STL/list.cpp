@@ -12,3 +12,7 @@ int main()
         cout << it <<" "; // 1 2 3
     return 0;
 }
+
+// underlying data structure for vector is array
+
+// underlying data structure for list and deque is linkedlist
