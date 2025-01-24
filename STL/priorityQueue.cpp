@@ -11,9 +11,12 @@ int main()
     pq.push(10);
     pq.push(8);
 
+    cout << pq.top() << "\n"; // 10
+    pq.pop(); // 10 gets poped
+
     while(pq.empty() == false)
     {
-        cout << pq.top() << " "; // 10 8 5 2
+        cout << pq.top() << " "; // 8 5 2
         pq.pop();
     }
     cout << endl;
