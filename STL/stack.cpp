@@ -8,14 +8,15 @@ int main()
     st.push(1);
     st.push(2);
     st.push(3);
+    st.push(4);
 
-    cout << st.size() << endl; // 3
-    cout << st.top() << endl; // 3
-    st.pop(); // 3 gets poped
+    cout << st.size() << endl; // 4
+    cout << st.top() << endl; // 4
+    st.pop(); // 4 gets poped
     
     while(st.empty() == false)
     {
-        cout << st.top() << " "; // 2 1
+        cout << st.top() << " "; // 3 2 1
         st.pop();
     }
     return 0;
