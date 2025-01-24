@@ -21,14 +21,20 @@ int main()
 
     cout << endl;
 
-    cout << st.count(3) << endl; // 1
+    cout << st.count(3) << endl; // 1 . count -> returns 1 if element is present, else returns 0
+
+    st.erase(2);
+    for(auto i : st)
+        cout << i << " "; // 1 3
+
+    cout << "\n";
 
     auto i = st.end();
     i--;
     st.erase(i);
 
     for(auto i : st)
-        cout << i << " "; // 1 2
+        cout << i << " "; // 1 
 
     cout << endl;
 
@@ -47,7 +53,7 @@ int main()
 
     // upper bound
     // returns an iterator that points to the element that is > number given
-    auto it2 = st1.upper_bound(11);
-    cout << *it2; // 12
+    auto it2 = st1.upper_bound(21);
+    cout << *it2; // 211
     return 0;
 }
