@@ -6,10 +6,13 @@ int main()
     pair<int, int> pr1 = {1, 2};
     cout << pr1.first << " " << pr1.second << endl; // 1 2
 
-    pair<int, char> pr2 = {3, 'a'};
-    cout << pr2.first << " " << pr2.second << endl; // 3 a
+    pair<int, int> pr2 = make_pair(3,4);
+    cout << pr2.first << " " << pr2.second << endl; // 3 4
 
-    pair<pair<int, char>, int> pr3 = {{4, 'b'}, 5};
-    cout << pr3.first.first << " " << pr3.first.second << " " << pr3.second; // 4 b 5
+    pair<int, char> pr3 = {5, 'a'};
+    cout << pr3.first << " " << pr3.second << endl; // 5 a
+
+    pair<pair<int, char>, int> pr4 = {{6, 'b'},7};
+    cout << pr4.first.first << " " << pr4.first.second << " " << pr4.second; // 6 b 7
     return 0;
 }
