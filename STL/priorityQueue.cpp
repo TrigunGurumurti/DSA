@@ -3,8 +3,9 @@ using namespace std;
 
 int main()
 {
-    // stores the highest element at the top
-    // max heap
+    // underlying data structure is heap
+
+    // max heap -> stores the largest element at the top
     priority_queue<int> pq;
     pq.push(5);
     pq.push(2);
@@ -20,8 +21,8 @@ int main()
         pq.pop();
     }
     cout << endl;
-
-    // min heap
+ 
+    // min heap -> stores the smallest element at the top
     priority_queue<int, vector<int>, greater<int>> pq1;
     pq1.push(5);
     pq1.push(2);
