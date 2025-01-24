@@ -8,28 +8,28 @@ void explainSort()
     for(int i = 0; i <= 4; i++)
         cout << arr[i] << " "; // 0 1 2 6 7
 
-    cout << endl;
+    cout << "\n";
 
     vector<int> vec = {6, 2, 1, 7, 0};
     sort(vec.begin(), vec.begin() + 5);
     for(auto it : vec)
         cout << it << " "; // 0 1 2 6 7
 
-    cout << endl;
+    cout << "\n";
 }
 
 void explainAccumulate()
 {
     int arr[5] = {6, 2, 1, 7, 0};
     cout << accumulate(arr, arr + 5, 0); // 16
-    cout << endl;
+    cout << "\n";
 }
 
 void explainCount()
 {
     int arr[5] = {6, 2, 1, 1, 0};
     cout << count(arr, arr + 5, 1); // 2
-    cout << endl;
+    cout << "\n";
 }
 
 void explainFind()
@@ -37,7 +37,7 @@ void explainFind()
     int arr[5] = {6, 2, 1, 1, 0};
     auto it = find(arr, arr + 5, 1);
     cout << *it; // 1
-    cout << endl;
+    cout << "\n";
 }
 
 void explainNextPermutation()
@@ -45,9 +45,9 @@ void explainNextPermutation()
     string str = "abc";
     do
     {
-        cout << str << endl;
+        cout << str << "\n";
     } while(next_permutation(str.begin(), str.end()));
-    cout << endl;
+    cout << "\n";
 }
 
 void  explainPrevPermutation()
@@ -57,7 +57,7 @@ void  explainPrevPermutation()
     {
         cout << str << endl;
     } while(prev_permutation(str.begin(), str.end()));
-    cout << endl;
+    cout << "\n";
 }
 
 void explainMaxMinElement()
@@ -65,12 +65,12 @@ void explainMaxMinElement()
     int arr[5] = {6, 2, 1, 7, 3};
     auto it = max_element(arr, arr + 5);
     cout << *it; // 7
-    cout << endl;
+    cout << "\n";
 
     int array[6] = {6, 2, 1, 7, 3, 4};
     auto i = min_element(array, array + 5);
     cout << *i; // 1
-    cout << endl;
+    cout << "\n";
 }
 
 void  explainReverse()
@@ -81,7 +81,7 @@ void  explainReverse()
     {
         cout << arr[i] << " "; // 3 7 1 2 6
     }
-    cout << endl;
+    cout << "\n";
 }
 
 bool internalComparator(int ele1, int ele2)
