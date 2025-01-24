@@ -12,7 +12,7 @@ int main()
 
     cout << q.size() << "\n"; // 4
     cout << q.front() << "\n"; // 1
-    q.pop(); // 1
+    q.pop(); // 1 gets poped
 
     while(q.empty() == false)
     {
