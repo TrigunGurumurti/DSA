@@ -12,18 +12,18 @@ int main()
     ms.insert(1);
     ms.insert(3);
 
-    cout << ms.count(1) << endl; // 3
+    cout << ms.count(1) << "\n"; // 3 . returns the no of times the element has repeated
 
     for(auto it : ms)   
         cout << it << " "; // 1 1 1 2 3 5
 
-    cout << endl;
+    cout << "\n";
 
     auto it = ms.erase(ms.find(1));
     for(auto it : ms)   
         cout << it << " "; // 1 1 2 3 5
 
-    cout << endl;
+    cout << "\n";
 
     auto i = ms.erase(1);
     for(auto i : ms)   
