@@ -21,8 +21,8 @@ int main()
     cout << endl;
 
     // reverse iterator
-    auto reverseBegin = vec.rbegin();
-    auto reverseEnd = vec.rend();
+    auto reverseBegin = vec.rbegin(); // points to the memory location of last element
+    auto reverseEnd = vec.rend(); // points to the memory location before first element
 
     for(auto i = reverseBegin; i <= reverseEnd-1; i++)
         cout << *i << " "; //  4 3 2 1
